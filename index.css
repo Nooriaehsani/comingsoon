@@ -1,0 +1,10 @@
+body{
+   
+    background-color:pink;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:red;
+}

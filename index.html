@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items: center;
+            background-color: rgb(234, 231, 231);
+            height: 95vh;
+            
+            
+        }
+        body img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        body  .logo a img{
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+        }
+        .input{
+            
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .input input{
+            width: 40%;
+            border: none;
+            margin-right: 5px;
+            padding: 5px;
+            outline: none;
+        }
+        .input button{
+            border: 1px solid black;
+            padding: 5px;
+            width: 100px;
+            background-color:rgb(234, 231, 231);
+
+
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <img src="Cart1000933www.tiktarh.com_.jpg" alt="">
+       <h1>SOMETHING AWESOME IS COMING</h1>
+       <P>We are trying to find the best way to learn<br/>So lets experience this Method with us</P>
+       <form class="input" onsubmit="return preventSubmit()" ><input type="email" id="input" value="" placeholder="type your email"><button>sign up</button></form>
+       <div class="logo">
+        <a><img src="index.png" alt="facebook"></a>
+        <a><img src="indexx.png" alt="twitter"></a>
+        <a><img src="images.png" alt="twitter"></a>
+        <script>
+            
+            function preventSubmit(){
+                var email = document.getElementById("input").value;
+                if(email == ""){
+                    alert("please fill the email box ");
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+
+</body>
+</html>
